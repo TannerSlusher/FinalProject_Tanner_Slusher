@@ -1,0 +1,245 @@
+/*
+  CSS Reset
+*/
+body{margin:0;
+     padding:0;
+     border:0;}
+
+header{margin:0;
+     padding:0;
+     border:0;}
+
+nav{margin:0;
+     padding:0;
+     border:0;}
+
+main{margin:0;
+     padding:0;
+     border:0;}
+
+footer{margin:0;
+     padding:0;
+     border:0;}
+
+img{margin:0;
+     padding:0;
+     border:0;}
+
+    
+h1{margin:0;
+     padding:0;
+     border:0;}
+
+
+h2{margin:0;
+     padding:0;
+     border:0;}
+	 
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+    text-align: center;  
+    text-decoration: none;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*
+  Styles rules for body and images
+*/
+
+img {max-width:100%;
+    display:block;
+	border-radius:15px;}
+
+body{font-family:Verdana,Helvetica,Arial;
+	 background-color:forestgreen}
+
+/* Style rules for mobile viewport */
+
+/* Style rule show mobile class */
+
+.mobile{
+    display: block;
+}
+
+#menu-links{
+    display: none;
+}
+
+#menu-links.show {
+    display: block;
+}
+
+.tab-nav{
+	display:none;
+}
+
+/*
+  Style rule for header content
+*/
+
+.mobile h2 {
+    padding: 2%;
+    text-align: center;
+	font-family:Georgia,Times,serif;
+	color:black;
+}
+
+/*
+  Styles rules for navigation area
+*/
+
+nav ul{list-style:none;
+	   text-align: center;
+	   background-color: turquoise;
+	}
+
+nav li{font-family:Spectral,Arial,Verdana,Sans-serif;
+		display:block;
+		}
+
+nav li a{text-decoration:none;
+		 font-size:1.5em;
+		 display:block;}
+		 
+		 
+nav li a:hover{
+	background-color:brown;
+}
+
+a {color:#3366CC}
+/*
+  Styles rules for main area
+*/
+
+main{background-color:white;
+     font-size:1.5em;
+	 color:black;}
+
+
+
+/*
+  Styles rules for classes and ids
+*/
+
+.email{
+    color: pink;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+}
+
+.video
+{
+  float: none;
+}
+
+.bottomGrid{
+    display: grid;
+    grid-column: 1 / span 3;
+    justify-content: center;
+}
+
+#footer{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#item1{
+    justify-content: center;
+}
+
+#item2{
+    grid-column-start: 3;
+    justify-content: center;
+}
+
+.map{ display: block;
+  margin-left: auto;
+
+  margin-right: auto;
+  width: 100%;
+  text-align: center;}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+   /*Show tab-desk class */
+
+	.mobile-nav {
+        display: none;
+    }
+	
+	.mobile-nav a{
+		display:none;
+	}
+	
+	.tab-nav{
+	display:block;
+  }
+	
+   h1{text-align:center;
+   font-size:5em;
+   font-family:Georgia,Times,serif;
+   padding:3%;
+   font-weight:bold;
+   color:black;}
+
+   h2{text-align:center;
+   font-size:3em;
+   font-family:Georgia,Times,serif;
+   padding:3%;
+   color:black;}
+   
+   nav li a {
+        padding: 0.5em 1.5em;
+    }
+	
+	nav li{display:inline-block;}
+
+  .grid2{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+	
+   h1{text-align:center;
+   font-size:7em;
+   font-family:Georgia,Times,serif;
+   padding:3%;
+   font-weight:bold;
+   color:black;}
+
+   h2{text-align:center;
+   font-size:5em;
+   font-family:Georgia,Times,serif;
+   padding:3%;
+   color:black;}
+   
+   nav li a {
+        padding: 0.5em 1.5em;
+    }
+	
+    .video
+  {
+    float: left;
+  }
+}
